@@ -138,6 +138,7 @@
     <Compile Include="Representations\TimeSheetRepresentation.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Office.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -209,6 +210,21 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\Office\en-us\office_strings.debug.js" />
+    <Content Include="Scripts\Office\es-es\office_strings.debug.js" />
+    <Content Include="Scripts\Office\excel-15.debug.js" />
+    <Content Include="Scripts\Office\excelwebapp-15.debug.js" />
+    <Content Include="Scripts\Office\ja-jp\office_strings.debug.js" />
+    <Content Include="Scripts\Office\MicrosoftAjax.js" />
+    <None Include="Scripts\Office\Office-vsdoc.js" />
+    <Content Include="Scripts\Office\Office.js" />
+    <None Include="Scripts\Office\outlook-15.debug-vsdoc.js" />
+    <Content Include="Scripts\Office\outlook-15.debug.js" />
+    <Content Include="Scripts\Office\outlookwebapp-15.debug.js" />
+    <Content Include="Scripts\Office\project-15.debug.js" />
+    <Content Include="Scripts\Office\siteTypesOffice.js" />
+    <Content Include="Scripts\Office\word-15.debug.js" />
+    <Content Include="Scripts\TechedDemo.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

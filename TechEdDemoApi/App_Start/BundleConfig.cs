@@ -1,13 +1,19 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
-namespace TechEdDemoApi
+namespace TechEdDemoApi.App_Start
 {
     public class BundleConfig
     {
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
+            bundles
+                .Add(new ScriptBundle("~/bundles/officeJS")
+                .Include("~/Scripts/Office.js", "~/Scripts/MicrosoftAjax.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/knockoutjs").Include(
+                        "~/Scripts/knockout-{version}.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -24,6 +30,9 @@ namespace TechEdDemoApi
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/officeStyles").Include("~/Content/Office.css"));
+
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

@@ -9,7 +9,9 @@ namespace TechEdDemoApi.App_Start
         {
             bundles
                 .Add(new ScriptBundle("~/bundles/officeJS")
-                .Include("~/Scripts/Office.js", "~/Scripts/MicrosoftAjax.js"));
+                .Include(
+                "~/Scripts/Office/MicrosoftAjax.js",
+                "~/Scripts/Office/Office.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/knockoutjs").Include(
                         "~/Scripts/knockout-{version}.js"));
